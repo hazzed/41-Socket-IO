@@ -34,7 +34,7 @@ socket.on('receive-message', (data) => {
   let timestamp = new Date().toLocaleTimeString();
   let div = document.createElement('div');
   let codename = data.username.toUpperCase();
-  div.textContent = timestamp + '' + codename + '' + data.message;
+  div.textContent = timestamp + '      ' + codename + '  :   ' + data.message;
   messagesContainer.appendChild(div);
 });
 

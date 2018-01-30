@@ -11,7 +11,7 @@ const USERS = {};
 io.on('connection', (socket) => {
   console.log('Joined', socket.id);
   USERS[socket.id] = {};
-  USERS[socket.id].username = 'to the chat!';
+  USERS[socket.id].username = 'User';
 
   console.log(USERS[socket.id].username);
   socket.emit('set-header', {username: USERS[socket.id].username});
